@@ -1,0 +1,684 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+body {
+   background: rgb(32, 32, 32);
+    color: white;
+}
+
+/* this is the header styling */
+
+header{
+    width: 100vw;
+    background: black;
+}
+
+.navbar {
+    position: relative;
+    background: #121212;
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 1000;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.navbar a {
+    color: white;
+    transition: 0.25s;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    align-items: left;
+    justify-items:left;
+    left: 5px;
+}
+
+.navbar .navli ul {
+    display: flex;
+}
+
+.navbar .navli ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .navli ul li .class1 {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    right: 150px;
+    top:20px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.navli a:hover {
+    background: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+
+/* slides */
+
+
+.slide-frame{
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.7s;
+}
+
+.image-container img{
+    height: 1000px;
+    width: 100%;
+    transition: 0.7s;
+}
+
+figure {
+    position: relative;
+    left: 0;
+    width: 500%;
+    animation: 25s image-container infinite;
+    transition: 0.7s;
+}
+
+.image-container {
+    float: left;
+    position: relative;
+    width: 20%;
+    transition: 0.7s;
+}
+
+@keyframes image-container {
+    0% {left: 0%;}
+    9% {left: -100%;}
+    18% {left: -100%;}
+    27% {left: -200%;}
+    36% {left: -200%;}
+    45% {left: -300%;}
+    60% {left: -300%;}
+    54% {left: -400%;}
+    63% {left: -400%;}
+    72% {left: -300%;}
+    81% {left: -300%;}
+    90% {left: -200%;}
+    100% {left: 0%;}
+    
+}
+
+
+/* body content style */
+
+.section1 {
+    margin-top: 4em;
+    margin-bottom: 5em;
+    margin-left: 8em;
+    margin-right: 8em;
+    text-align: center;
+    background: rgb(32, 32, 32);
+    font-size: larger;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.section1 p{
+    line-height: 1.9;
+}
+
+.grid-container{
+    margin-top: 0em;
+    background: rgb(32, 32, 32);
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    gap: -1px;
+    grid-template-columns:repeat(2, 50vw);
+    margin-bottom: 10em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-size: larger;
+    font-style: oblique;
+}
+
+.grid-container p{
+    font-style: normal;
+    color: white;
+}
+
+.grid-container .grid-item1 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-left: 8em;
+}
+
+.grid-container .grid-item2 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-right: 8em;  
+    padding-left: 2em; 
+    padding-right: 2em;
+}
+
+.grid-container .grid-item3 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-left: 8em;  
+    padding-left: 2em; 
+    padding-right: 2em; 
+}
+
+.grid-container .grid-item4 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-right: 8em; 
+}
+
+.grid-container .grid-item5 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-left: 8em; 
+}
+
+.grid-container .grid-item6 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-right: 8em;  
+    padding-left: 2em; 
+    padding-right: 2em; 
+}
+
+.grid-container .grid-item7 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-left: 8em;  
+    padding-left: 2em; 
+    padding-right: 2em; 
+}
+
+.grid-container .grid-item8 {
+    align-content: center;
+    background: rgb(54, 54, 54);
+    color: white;
+    margin-right: 8em;   
+}
+
+
+@keyframes appear {
+    from {
+      opacity: 0;
+      scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.grid-container div {
+    animation: appear  linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+p{
+    font-weight: 400;
+    line-height: 22px;
+    padding-bottom: 1em;
+}
+
+
+
+/* style for footer */
+
+.footer-section{
+    text-align: center;
+    background: #121212;
+    color: white;
+    padding-bottom: 3em;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+ .span{
+    margin-top: -4em;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.ftimg {
+    width: 10vw;
+    vertical-align: middle;
+}
+
+.footer{
+    text-align: center;
+    bottom: 0px;
+    background: #121212;
+    color: white;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    grid-template-columns:repeat(6, 16.67vw);
+    align-items: center;
+}
+   
+
+.footer .footer-item {
+    padding: 7px;
+    text-align: center;
+}
+
+.footer .h3 {
+    text-align: center;
+}
+
+.footer i {
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    font-size: 29px;   
+}
+
+
+.fa-tiktok:hover {
+    font-size: 29px; 
+}
+
+.fa-tiktok {
+    transition: 0.25s;  
+}
+
+.fa-instagram {
+    transition: 0.25s;  
+}
+
+.fa-whatsapp{
+    transition: 0.25s;
+}
+
+.fa-whatsapp:hover {
+    font-size: 29px;
+}
+
+/* Responsiveness */
+
+@media (max-width:599px) {
+    .footer{
+        grid-template-columns: auto;
+        padding-bottom: 1em;
+        gap: 3em; 
+    }
+
+    .ftimg{
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+    .navbar .navli {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: right;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+
+    .section1 {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: -15em;
+        font-size: smaller;
+    }
+
+    .grid-container {
+        width: 100vw;
+        height: 80%;
+        grid-template-columns: repeat(1, 100vw);
+        border-radius: 30px;
+        gap: 0px;
+        font-weight: 280;
+        font-size: smaller;
+    }
+
+    .grid-container .grid-item1 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+    }
+
+    .grid-container .grid-item2 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+        margin-bottom: 2em;
+        border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item3 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+        order: 4;
+        margin-bottom: 2em;
+        border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item4 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+         order: 3;
+    }
+
+     .grid-container .grid-item5 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+    }
+
+     .grid-container .grid-item6 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+         margin-bottom: 2em;
+         border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item7 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+         order: 8;
+         border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item8 {
+        margin-left: 1em;  
+        margin-right: 1em; 
+        align-content: center;
+         order: 7;
+    }
+
+    .image-container img {
+        height: 500px;
+    } 
+    
+     .span{
+        margin-top: 4em;
+    }
+}
+
+@media (min-width:600px) {
+
+   .footer{
+        grid-template-columns: auto auto;
+        gap: 4em;
+        padding-bottom: 4em;  
+    }
+
+    .ftimg{
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: right;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+
+    .section1 {
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-top: -10em;
+    }
+
+    .grid-container {
+        width: 100vw;
+        height: 80%;
+        grid-template-columns: repeat(1, 100vw);
+        border-radius: 30px;
+        gap: 0px;
+        font-weight: 280;
+    }
+
+    .grid-container .grid-item1 {
+        margin-left: 3em;  
+        margin-right: 3em; 
+        align-content: center;
+    }
+
+    .grid-container .grid-item2 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+        margin-bottom: 2em;
+        border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item3 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+        order: 4;
+        margin-bottom: 2em;
+        border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item4 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+         order: 3;
+    }
+
+     .grid-container .grid-item5 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+    }
+
+     .grid-container .grid-item6 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+         margin-bottom: 2em;
+         border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item7 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+         order: 8;
+         border-radius: 0px 0px 3px 3px;
+    }
+
+     .grid-container .grid-item8 {
+        margin-left: 3em;  
+        margin-right: 3em;  
+        align-content: center;
+         order: 7;
+    }
+
+    .image-container img {
+        height: 500px;
+    }  
+
+     .span{
+        margin-top: 1.5em;
+    }
+
+}
+
+@media (min-width:1099px) {
+    
+    .footer{
+        grid-template-columns:repeat(6, 16.67vw);
+        gap: 10px;
+    }
+
+    .ftimg{
+        width: 10vw;
+        vertical-align: middle;
+    }
+
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        display: inline;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    .navbar i {
+        display: none;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .section1 {
+        margin-top: 8em; 
+        margin-left: 8em;
+        margin-right: 8em;
+    }
+
+    .grid-container {
+        width: 100vw;
+        height: 100%;
+        grid-template-columns: repeat(2, 50vw);
+        border-radius: 30px;
+        gap: -1px;
+    }
+
+    .grid-container .grid-item1 {
+        margin-left: 8em; 
+        margin-right: 0em; 
+        align-content: center;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .grid-container .grid-item2 { 
+        margin-right: 8em;  
+        margin-left: 0em;
+        align-content: center;
+        margin-bottom: 0em;
+        border-radius: 0px 10px 0px 0px;
+    }
+
+     .grid-container .grid-item3 {
+        margin-left: 8em; 
+        margin-right: 0em;   
+        align-content: center;
+        order: 3;
+        margin-bottom: 0em;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+     .grid-container .grid-item4 { 
+        margin-right: 8em; 
+        margin-left: 0em; 
+        align-content: center;
+        order: 4;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+     .grid-container .grid-item5 {
+        margin-left: 8em; 
+        margin-right: 0em;   
+        align-content: center;
+        order: 5;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+     .grid-container .grid-item6 { 
+        margin-right: 8em; 
+        margin-left: 0em; 
+        align-content: center;
+         order: 6;
+         margin-bottom: 0em;
+         border-radius: 0px 0px 0px 0px;
+        
+    }
+
+     .grid-container .grid-item7 {
+        margin-left: 8em;
+        margin-right: 0em;    
+        align-content: center;
+        order: 7;
+        border-radius: 0px 0px 0px 10px;
+    }
+
+     .grid-container .grid-item8 { 
+        margin-right: 8em;  
+        margin-left: 0em;
+        align-content: center;
+        order: 8;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+    .image-container img {
+        height: 1000px;
+    } 
+    
+     .span{
+        margin-top: -4em;
+    }
+}

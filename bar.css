@@ -1,0 +1,216 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+}
+
+body {
+    background: rgb(32, 32, 32);
+    color: white;
+}
+
+/* this is the header styling */
+header{
+    width: 100vw;
+    background: black;
+}
+
+.navbar {
+    position: absolute;
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 1000;
+    font-family: "Bricolage Grotesque", sans-serif;
+
+}
+
+.navbar a {
+    color: white;
+    transition: 0.25s;
+    font-size: larger;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    align-items: left;
+    justify-items:left;
+    left: 5px;
+}
+
+.navbar .navli ul {
+    display: flex;
+}
+
+.navbar .navli ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .navli ul li .class1 {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    right: 150px;
+    top:20px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.navli a:hover {
+    background: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+.Home-photo img{
+    width: 100%;
+    height: 950px;
+}
+
+.clubdrink{
+    margin-top: 5em;
+    border: 2px solid rgb(226, 206, 180);
+    border-radius: 10px;
+    margin-left: 2em;
+    margin-right: 2em;
+    /* text-align: center; */
+    padding-top: 2em;
+    height: 100vh;
+    justify-items: center;
+    width: 60em;
+}
+
+.clubdrink .gridd{
+    display: grid;
+    grid-template-columns: repeat(2, 15vw);
+    margin-top: 2em;
+    gap: 5em;
+}
+
+.clubdrink h1{
+    color: rgb(226, 206, 180);
+}
+
+.clubdrink h2{
+    color: rgb(226, 206, 180);
+}
+
+.clubdrink h3{
+    color: rgb(226, 206, 180);
+}
+
+.clubdrink .leftmenu{
+    justify-content: center;
+}
+
+.clubdrink .rightmenu{
+    justify-content: center;
+    text-align: left;
+
+}
+
+.clubdrink hr{
+    width: 20em;
+    border-bottom: 1em;
+    border: 1px solid rgb(226, 206, 180);
+    margin-bottom: 1em;
+}
+
+.clubdrink ul{
+    margin-bottom: 4em;
+}
+
+.clubdrink ul li {
+    margin-bottom: 0.5em;
+}
+
+
+
+
+/* style for footer */
+
+.footer-section{
+    text-align: center;
+    background: #121212;
+    color: white;
+    padding-bottom: 3em;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+ .span{
+    color: gray;
+    font-size: 0.9em;
+}
+
+.ftimg {
+    width: 10vw;
+    vertical-align: middle;
+}
+
+.footer{
+    bottom: 0px;
+    background: #121212;
+    color: white;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    grid-template-columns:repeat(6, 16.67vw);
+    align-items: center;
+}
+
+.footer .footer-item {
+    padding: 7px;
+    text-align: center;
+}
+
+.footer .h3 {
+    text-align: center;
+}
+
+.footer i {
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    font-size: 29px;   
+}
+
+
+.fa-tiktok:hover {
+    font-size: 29px; 
+}
+
+.fa-tiktok {
+    transition: 0.25s;  
+}
+
+.fa-instagram {
+    transition: 0.25s;  
+}
+
+.fa-whatsapp{
+    transition: 0.25s;
+}
+
+.fa-whatsapp:hover {
+    font-size: 29px;
+}

@@ -1,0 +1,373 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+}
+
+body {
+    background: black ;
+    color: white;
+}
+
+/* this is the header styling */
+header{
+width: 100vw;
+background: black;
+}
+
+.navbar {
+    position: relative;
+    background: #121212;
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 1000;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.navbar a {
+    color: white;
+    transition: 0.25s;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    align-items: left;
+    justify-items:left;
+    left: 5px;
+}
+
+.navbar .navli ul {
+    display: flex;
+}
+
+.navbar .navli ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .navli ul li .class1 {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    right: 150px;
+    top:20px;
+    text-transform: uppercase;
+    transition: 0.25s;
+ }
+
+.navli a:hover {
+    background: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+/* body styling */
+
+h1{
+    text-align: center;
+    margin-top: 6em;
+    text-transform: uppercase;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-style: oblique;
+}
+
+.Grid-container{
+    margin-top: 8em;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns:repeat(4, 20vw);
+    margin-bottom: 10em;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+
+.Grid-container .grid-item {
+    align-content: center;
+    color: white;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    margin-bottom: 3em;
+    line-height: 2;
+    position: relative;
+}
+
+.grid-item h3{
+    color: rgb(226, 206, 180);
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+h5{
+    color: gray;
+    font-weight: 400;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.Grid-container img{
+    transition: 0.25s;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid rgb(226, 206, 180);
+}
+
+.Grid-container .link a{
+    border: 1px solid white;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    transition: 0.25s;
+    background: red;
+    color: white;
+}
+
+.Grid-container .link a:hover{
+    background: white;
+    color: #121212;
+}
+
+.Grid-container .link{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 5;
+    background: rgba(0,0,0,0.8);
+    transition: 0.25s;
+
+}
+
+.Grid-container .link:hover{
+    opacity: 1;
+}
+
+/* style for footer */
+
+.footer-section{
+    text-align: center;
+    background: #121212;
+    color: white;
+    padding-bottom: 3em;
+}
+
+ .span{
+    margin-top: -4em;
+    color: gray;
+    font-size: 0.9em;
+}
+
+.ftimg {
+    width: 10vw;
+    vertical-align: middle;
+}
+
+.footer{
+    bottom: 0px;
+    background: #121212;
+    color: white;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    grid-template-columns:repeat(6, 16.67vw);
+    align-items: center;
+    margin-top: 90em;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+   
+
+.footer .footer-item {
+    padding: 7px;
+    text-align: center;
+}
+
+.footer .h3 {
+    text-align: center;
+}
+
+.footer i {
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    font-size: 29px;   
+}
+
+
+.fa-tiktok:hover {
+    font-size: 29px; 
+}
+
+.fa-tiktok {
+    transition: 0.25s;  
+}
+
+.fa-instagram {
+    transition: 0.25s;  
+}
+
+.fa-whatsapp{
+    transition: 0.25s;
+}
+
+.fa-whatsapp:hover {
+    font-size: 29px;
+}
+
+/* Responsiveness */
+
+@media (max-width:599px) {
+    .footer{
+        grid-template-columns: auto;
+        padding-bottom: 1em;
+        margin-top: 120em;
+    }
+
+    .ftimg{
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   
+
+    .navbar .navli {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: right;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+
+
+    .Grid-container{
+        grid-template-columns:repeat(2, 45vw);
+    }
+
+    h1{
+        font-size: larger;
+    }
+
+    .grid-item h3{
+        font-size: smaller;
+    }
+
+    .span{
+        margin-top: 2em;
+    }
+}
+
+@media (min-width:600px) {
+    
+    .footer{
+        grid-template-columns: auto auto;
+        padding-bottom: 4em;
+        margin-top: 150em;
+        gap: 4em;
+    }
+
+    .ftimg{
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navbar a {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: right;
+    }
+
+    .logo{
+        width: 25vw;
+    }
+
+    .Grid-container{
+        grid-template-columns:repeat(2, 45vw);
+    }
+
+    h1{
+        font-size: xx-large;
+    }
+
+    .grid-item h3{
+        font-size: larger;
+    }
+
+    .span{
+        margin-top: 2em;
+    }
+
+}
+
+@media (min-width:1099px) {
+    
+    .footer{
+        grid-template-columns:repeat(6, 16.67vw);
+        gap: 10px;
+        margin-top: 100em;
+    }
+
+    .ftimg{
+        width: 10vw;
+        vertical-align: middle;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        display: inline;
+    }
+
+    .fa-bars{
+        display: none;
+    }
+
+    .navbar i {
+        display: none;
+    }
+
+    .logo{
+        width: 10vw;
+    }
+
+    .Grid-container{
+        grid-template-columns:repeat(4, 20vw);
+    }
+
+    .span{
+        margin-top: -4em;
+    }
+}

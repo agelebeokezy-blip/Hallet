@@ -1,0 +1,13 @@
+.navli-mobile{
+    display:none;
+    position: absolute;
+    right: 0px;
+    width: fit-content;
+    top: 60px;
+    background: #121212;
+    padding: 15px;;
+}
+
+.navli-mobile ul li{
+     margin-top:15px;
+}

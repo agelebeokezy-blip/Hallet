@@ -1,0 +1,507 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: clip;
+}
+
+body {
+    background:black ;
+    color: white;
+}
+
+/* this is the header styling */
+header{
+    width: 100vw;
+    background: black;
+}
+
+.navbar {
+    position: absolute;
+    color: white;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    box-sizing: border-box;
+    align-items: center;
+    z-index: 1000;
+    font-family: "Bricolage Grotesque", sans-serif;
+
+}
+
+.navbar a {
+    color: white;
+    transition: 0.25s;
+    font-size: larger;
+}
+
+.logo {
+    width: 10vw;
+    position: absolute;
+    align-items: left;
+    justify-items:left;
+    left: 5px;
+}
+
+.navbar .navli ul {
+    display: flex;
+}
+
+.navbar .navli ul li {
+    margin: 0 20px;
+    align-items: center;
+}
+
+.navbar .navli ul li .class1 {
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    right: 150px;
+    top:20px;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.navli a:hover {
+    background: white;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.fa-bars {
+    font-size: 2em;
+    color: white;
+}
+
+/* style for body */
+
+.first-section{
+    text-align: center;
+}
+
+.Home-photo{
+    display: flex;
+    opacity: 60%;
+    animation-name: bground;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+}
+
+.Home-photo img{
+    height: 950px;
+}
+
+.p-text{
+    position: absolute;
+    justify-self: center;
+    margin-top: -15em;
+    font-size: 2em;
+    text-align: center;
+    opacity: 80%;
+    font-family: "Bricolage Grotesque", sans-serif;
+    animation-name: anime;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+}
+
+@keyframes bground{
+    0%{
+        opacity: 0%;
+    }
+
+    10%{
+        opacity: 6%;
+    }
+
+    20%{
+        opacity: 12%;
+    }
+
+    30%{
+        opacity: 18%;
+    }
+
+    40%{
+        opacity: 24%;
+    }
+
+    50%{
+        opacity: 30%;
+    }
+
+    60%{
+        opacity: 36%;
+    }
+
+     70%{
+        opacity: 42%;
+    }
+
+     80%{
+        opacity: 48%;
+    }
+
+     90%{
+        opacity: 54%;
+    }
+
+     100%{
+        opacity: 60%;
+    }
+}
+
+.second-section{
+    background: rgb(32, 32, 32);
+    height: 450vh;
+    text-align: center;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.second-section-div{
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    width: 100%;
+    gap: 1.5em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-style: oblique;
+    justify-content: center;
+}
+
+.second-section-div img{
+    border-radius: 10px;
+}
+
+.second-section-div div{
+    margin-top: 5em;
+}
+
+.second-section-div p{
+    margin-top: 2em;
+    line-height: 1.5;
+    font-size: larger;
+    font-style: normal;
+}
+
+.second-section-div a{
+    position: absolute;
+    padding: 6px;
+    border: 2px solid rgb(226, 206, 180);
+    font-size: larger;
+    margin-top: 3em;
+    font-style: normal;
+    color: white;
+    transition: 0.25s;
+}
+
+.second-section-div a:hover{
+    color: black;
+    background: white;
+}
+
+.second-section-div2{
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    gap: 3em;
+    justify-content: center;
+    margin-top: 4em;
+    background: rgb(54, 54, 54);
+    width: 65em;
+    margin-left: 8em;
+    height: 25em;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    align-items: center;
+    border: 2px solid rgb(54, 54, 54);
+}
+
+.second-section-div2 img{
+    border-radius: 20px;
+    transition: 0.25s;
+    border: 2px solid rgb(226, 206, 180);
+    margin-left: -0.1em;
+}
+
+.second-section-div2 img:hover{
+    width: 98%;
+}
+
+.second-section-div2 .card-link{
+    transition: 0.25s;
+    color: rgb(226, 206, 180)
+}
+
+.second-section-div2 .card-link:hover{
+    border-bottom: 2px solid rgb(226, 206, 180);
+    font-size: 1.2em;
+}
+
+.second-section h1{
+    margin-top: 3em;
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin-bottom: -0.5em;
+}
+
+.video-pic-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 38%);
+    width: 95vw;
+    margin-top: 2em;
+    justify-content: center;
+    margin-left: 2.5em;
+    align-items: center;
+    height: 800px;
+    border-radius: 20px;
+    border: 2px solid rgb(54, 54, 54);
+}
+
+.video-pic-grid video{
+    border-radius: 10px;
+    border: 2px solid rgb(226, 206, 180); 
+}
+
+.video-pic-grid .video-grid{
+    margin-left: 17em;
+    transition: 0.25s;
+}
+
+.video-pic-grid .pic-grid{
+    margin-left: 1em;
+    transition: 0.25s;
+}
+
+.video-pic-grid .pic-grid2{
+    margin-left: -17em;
+    transition: 0.25s;
+}
+
+/* Event scroll section */
+
+.event-container{
+    display: flex;
+    width: 89vw;
+    margin-top: 9em;
+    margin-left: 6em;
+    align-items: center;
+    height: 650px;
+    border-radius: 20px;
+    border: 2px solid rgb(54, 54, 54);
+    overflow-x: auto;
+}
+
+.event-container .grid-item{
+    flex-shrink: 0;
+    height: 560px;
+    width: 300px;
+    border: 2px solid transparent;
+    margin-left: 2em;
+    border-radius: 20px;
+}
+
+.second-section .grid-item img{
+    background: none;
+    border-radius: 20px;
+    border: 2px solid rgb(226, 206, 180);
+    transition: 0.25s;
+}
+
+.second-section .grid-item img:hover{
+    background: none;
+    width: 98%;
+}
+
+.event-container #it1{
+    margin-right: 2em;
+}
+
+.event-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.grid-item h3{
+    color: rgb(226, 206, 180);
+    font-family: "Bricolage Grotesque", sans-serif;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.grid-item h5{
+    color: gray;
+    font-weight: 400;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.event-container .link{
+    margin-top: 2em;
+}
+
+.event-container .link a{
+    border: 1px solid white;
+    font-size: 1.1em;
+    padding: 10px 10px;
+    align-items: center;
+    transition: 0.25s;
+    background: red;
+    color: white;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.event-container .link a:hover{
+    background: white;
+    color: #121212;
+}
+
+.event-container i{
+    font-size: 2em;
+    margin-top: -3em;
+    position: absolute;
+}
+
+.event-container .fa-chevron-right{
+    margin-left: 52.2em;
+}
+
+.faq{
+    width: 100vw;
+    margin-top: 15em;
+}
+
+.faq h1{
+    margin-bottom: 3em;
+}
+
+.faq h3{
+    text-align: left;
+    margin-left: 10em;
+    margin-bottom: 0.5em;
+}
+
+.faq p{
+    text-align: left;
+    margin-left: 13em;
+    width: 95.8em;
+    color: rgb(189, 188, 188);
+}
+
+.faq .faq1{
+    margin-bottom: 2em;
+}
+
+.faq .faq1 h3 .fa1{
+    margin-left: 83em;
+}
+
+.faq .faq1 h3 .fa2{
+    margin-left: 83em;
+}
+
+.faq .faq1 h3 .fa3{
+    margin-left: 83em;
+}
+
+.faq .faq1 h3 .fa4{
+    margin-left: 83em;
+}
+
+.faq .faq1 hr{
+    margin-bottom: 1em;
+    width: 97em;
+    margin-left: 11.5em;
+    border: 1px solid rgb(54, 54, 54);
+}
+
+.faq .p1{
+    display: none;
+}
+
+.faq .p2{
+    display: none;
+}
+
+.faq .p3{
+    display: none;
+}
+
+.faq .p4{
+    display: none;
+}
+
+/* style for footer */
+
+.footer-section{
+    text-align: center;
+    background: #121212;
+    color: white;
+    padding-bottom: 3em;
+    font-family: "Bricolage Grotesque", sans-serif;
+}
+
+ .span{
+    color: gray;
+    font-size: 0.9em;
+}
+
+.ftimg {
+    width: 10vw;
+    vertical-align: middle;
+}
+
+.footer{
+    bottom: 0px;
+    background: #121212;
+    color: white;
+    display: grid;
+    gap: 10px;
+    width: 100vw;
+    grid-template-columns:repeat(6, 16.67vw);
+    align-items: center;
+}
+
+.footer .footer-item {
+    padding: 7px;
+    text-align: center;
+}
+
+.footer .h3 {
+    text-align: center;
+}
+
+.footer i {
+    font-size: 25px;
+    color: white;
+}
+
+.fa-instagram:hover {
+    font-size: 29px;   
+}
+
+
+.fa-tiktok:hover {
+    font-size: 29px; 
+}
+
+.fa-tiktok {
+    transition: 0.25s;  
+}
+
+.fa-instagram {
+    transition: 0.25s;  
+}
+
+.fa-whatsapp{
+    transition: 0.25s;
+}
+
+.fa-whatsapp:hover {
+    font-size: 29px;
+}
+
+
